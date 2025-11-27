@@ -262,7 +262,8 @@
             <li>Your photos are sent to OpenAI's GPT-4o-mini Vision API for analysis</li>
             <li>OpenAI processes your photos according to their <a href="https://openai.com/policies/usage-policies" target="_blank">Data Usage Policy</a></li>
             <li><strong>OpenAI does NOT use your photos to train their models</strong> (per our API agreement)</li>
-            <li>Photos are automatically deleted by OpenAI after processing</li>
+            <li><strong>OpenAI automatically deletes photos from their servers after processing</strong> (typically within minutes)</li>
+            <li><strong>We store copies of your photos in Supabase Storage</strong> for your access and future scans</li>
             <li>Analysis results are stored securely in our database</li>
         </ul>
         
@@ -322,7 +323,7 @@
         <h2>3. Third-Party Services and Data Sharing</h2>
         
         <h3>3.1 Service Providers</h3>
-        <p><strong>Yes, we are legally required to disclose all third-party services</strong> that process your data. We use the following third-party services to operate the App:</p>
+        <p>We use the following third-party services to operate the App. These service providers process your data on our behalf and are bound by strict data protection agreements:</p>
         
         <h4>Supabase (Backend Infrastructure)</h4>
         <ul>
@@ -336,10 +337,10 @@
         <h4>OpenAI (AI Analysis)</h4>
         <ul>
             <li><strong>Purpose:</strong> Analyze physique photos and generate ratings</li>
-            <li><strong>Data Shared:</strong> Your physique photos (front and back)</li>
+            <li><strong>Data Shared:</strong> Your physique photos (front and back) are temporarily sent to OpenAI for processing</li>
             <li><strong>Privacy Policy:</strong> <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a></li>
             <li><strong>Data Usage:</strong> Photos are NOT used to train OpenAI models</li>
-            <li><strong>Retention:</strong> Photos are automatically deleted after processing</li>
+            <li><strong>Retention:</strong> OpenAI automatically deletes photos from their servers after processing (typically within minutes). We store copies in Supabase Storage for your access</li>
         </ul>
         
         <h4>RevenueCat (Subscription Management)</h4>
@@ -448,14 +449,19 @@
         <h3>5.1 Access and Control</h3>
         <p>You have the right to:</p>
         <ul>
-            <li>✅ <strong>Access</strong> your personal data</li>
-            <li>✅ <strong>Update or correct</strong> your information</li>
-            <li>✅ <strong>Delete</strong> your account and all associated data</li>
-            <li>✅ <strong>Export</strong> your data in a portable format</li>
-            <li>✅ <strong>Opt-out</strong> of data improvement reviews</li>
-            <li>✅ <strong>Object</strong> to processing of your data</li>
-            <li>✅ <strong>Restrict</strong> processing of your data</li>
+            <li>✅ <strong>Access</strong> your personal data (view your profile, scan results, and workout plans in the App)</li>
+            <li>✅ <strong>Update or correct</strong> your information (via Settings → Profile)</li>
+            <li>✅ <strong>Delete</strong> your account and all associated data (contact us to request deletion)</li>
+            <li>✅ <strong>Export</strong> your data (contact us to request a copy of your data in a portable format)</li>
+            <li>✅ <strong>Opt-out</strong> of data improvement reviews (via Settings → "Help Improve AI Accuracy")</li>
         </ul>
+        <div class="info-box">
+            <p><strong>Important Limitations:</strong></p>
+            <ul>
+                <li><strong>Objecting to or restricting core data processing</strong> (photo analysis, account management, service delivery) is not possible, as this processing is <strong>necessary to provide the App's core functionality</strong>. If you object to this essential processing, you will not be able to use the App.</li>
+                <li>You can <strong>opt-out of optional processing</strong> (data improvement reviews) without affecting your ability to use the App.</li>
+            </ul>
+        </div>
         
         <h3>5.2 How to Exercise Your Rights</h3>
         <p><strong>To access, update, or delete your data:</strong></p>
@@ -481,19 +487,26 @@
         <p>If you are in the European Union (EU) or European Economic Area (EEA), you have rights under the General Data Protection Regulation (GDPR):</p>
         <ul>
             <li><strong>Right of Access:</strong> Obtain confirmation of whether we process your data and access to that data</li>
-            <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete data</li>
+            <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete data (via Settings → Profile)</li>
             <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Request deletion of your data</li>
-            <li><strong>Right to Restrict Processing:</strong> Limit how we use your data</li>
-            <li><strong>Right to Data Portability:</strong> Receive your data in a structured, commonly used format</li>
-            <li><strong>Right to Object:</strong> Object to processing of your data</li>
-            <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
+            <li><strong>Right to Data Portability:</strong> Receive your data in a structured, commonly used format (contact us to request)</li>
         </ul>
+        
+        <div class="info-box">
+            <p><strong>Important Limitations:</strong></p>
+            <ul>
+                <li><strong>Right to Restrict Processing:</strong> You can restrict optional processing (data improvement reviews), but <strong>you cannot restrict core processing</strong> (photo analysis, account management, service delivery) as it is necessary to provide the App's core functionality. Restricting core processing would prevent you from using the App.</li>
+                <li><strong>Right to Object:</strong> You can object to optional processing (data improvement reviews), but <strong>you cannot object to core processing</strong> (photo analysis, account management, service delivery) as it is necessary to provide the App's core functionality. Objecting to core processing would prevent you from using the App.</li>
+                <li><strong>Right to Withdraw Consent:</strong> You can withdraw consent for optional processing (data improvement reviews), but withdrawing consent for core processing would require deleting your account and ceasing use of the App.</li>
+            </ul>
+        </div>
+        
         <p>To exercise these rights, contact us at <a href="mailto:misha@aestheticsai.app">misha@aestheticsai.app</a> with "GDPR Request" in the subject line.</p>
         
         <p><strong>Legal Basis for Processing (GDPR):</strong></p>
         <ul>
-            <li><strong>Consent:</strong> You consent to data processing by using the App</li>
-            <li><strong>Contract Performance:</strong> Processing is necessary to provide the service</li>
+            <li><strong>Contract Performance:</strong> Core processing (photo analysis, account management, service delivery) is necessary to provide the service you requested</li>
+            <li><strong>Consent:</strong> Optional processing (data improvement reviews) is based on your consent, which you can withdraw at any time</li>
             <li><strong>Legitimate Interests:</strong> To improve our services and ensure security</li>
         </ul>
         
